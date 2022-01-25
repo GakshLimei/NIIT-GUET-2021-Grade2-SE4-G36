@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>咨讯</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/dengpaozi&wenzigundong.css">
+    <script>
+        function cal() {
+            var appleVolum = Number(document.getElementById("appleVolum").value);
+            var bananaVolum = Number(document.getElementById("bananaVolum").value);
+            var pineappleVolum = Number(document.getElementById("pineappleVolum").value);
+            document.getElementById("msg").innerText = "共花费：" + (appleVolum * 3999 + bananaVolum * 5299 + pineappleVolum * 2599);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="page">
+        <div id="header">
+            <div id="section">
+                <div><a href="huawei.html"><img src="images/1.gif" alt="Logo" width="25%"></a></div>
+            </div>
+            <ul>
+                <li class="current"><a href="huawei.html">华为</a></li>
+               
+                <li><a href="xiaomi.html">小米</a></li>
+                <li><a href="sanxing.html">三星</a></li>
+            </ul>
+
+        </div>
+    </div>
+    </div>
+    <form name="form1">
+        <table>
+            <tr>
+                <th colspan="2">小米商品购买参考</th>
+            </tr>
+            <tr>
+                <td>小米11:3999 高通旗舰888，米之心</td>
+                <td>
+                    <h4><a href="https://www.mi.com/index.html">详情信息</a></h4>
+                </td>
+            </tr>
+            <tr>
+                <td>小米Max4:5299 探索未来，新全面屏</td>
+                <td>
+                    <h4><a href="https://www.mi.com/mix4">详情信息</a></h4>
+                </td>
+            </tr>
+            <tr>
+                <td>小米CIVI:2599 小米CIVI，天生好看</td>
+                <td>
+                    <h4><a href="https://www.mi.com/xiaomicivi">详情信息</a></h4>
+                </td>
+            </tr>
+
+            <!-- <tr>
+                <th colspan="2">微软商品购买</th>
+            </tr> -->
+            <!-- <td>商品名</td>
+            <td><input type="text" name="usrname" placeholder="输入商品序号" required></td>
+            </tr>
+            <tr>
+                <td>Dete of bookings</td>
+                <td><input type="date" id="bookingdate" required></td>
+            </tr>
+            <tr>
+                <td>movie</td>
+                <td><select id="=sel">
+                        <option value="0">select movie</option>
+                        <optgroup label="drama">
+                            <OPTION value="1">Nightmare</OPTION>
+                            <OPTION value="2">Along Polly Came</OPTION>
+                        </OPTGROUP>
+                        <OPTGROUP label="Thriller">
+                            <OPTION value="3">Source Code</OPTION>
+                            <OPTION value="4">If only</OPTION>
+                        </OPTGROUP>
+                        <OPTGROUP label="Romantic">
+                            <OPTION value="5">A walk to remember</OPTION>
+                            <OPTION value="6">Angel</OPTION>
+                        </OPTGROUP>
+                    </SELECT></TD>
+            </TR>
+            <TD>Show Timings</TD>
+            <TD><SELECT id="timing">
+                    <OPTION value="7">Select Time</OPTION>
+                    <OPTION value="8">10:30AM</OPTION>
+                    <OPTION value="9">5:30PM</OPTION>
+                    <OPTION value="10">12:30PM</OPTION>
+                </SELECT></TD>
+            </TR>
+            <tr>
+                <td>Select Class</td>
+                <td>
+                    <input type="radio" name="rb" required">Platinum</input>
+                    <input type="radio" name="rb" required>Gold</input>
+                    <input type="radio" name="rb" required>Exclusive</input>
+                </td>
+            </tr>
+            <TR>
+                <TD>Price </TD>
+                <TD><INPUT type="text" name="price" disabled> </TD>
+            </TR>
+            <TR>
+                <TD>Number of Tickets</TD>
+                <TD><INPUT type="text" name="num" placeholder="Enter Tickets" required> </td>
+            </TR>
+            <TR>
+                <TD>Total Price</TD>
+                <TD><INPUT type="text" name="totalprice" disabled> </TD>
+            </TR>
+            <tr>
+                <td>
+                    <input id="submit" type="submit">
+                </td>
+                <td><input type="reset"></td>
+            </tr>  -->
+        </table>
+
+        买一台小米11需3999元.<p></p> 请输入购买台数：<input id="appleVolum"><br>
+        买一台小米MAX4需5299元.<p></p> 请输入购买台数：<input id="bananaVolum"><br>
+        买一台小米CIVI需2599元.<p></p> 请输入购买台数：<input id="pineappleVolum"><br>
+        <button onclick="cal(); return false;">我买</button><br>
+        总价: <span id="msg" style="color: blue;"></span>
+    </form>
+    <H2>小米咨讯</H2>
+    <marquee behavior="scorll" direction="up" style="width: 50%;">
+        <DIV class="auto-style">
+            <P>S1、C1之后，日前小米官方宣布了第三款澎湃芯片——澎湃P1。雷军发微博表示：“有点小激动！澎湃P1，填补了120W单电芯快充行业空白。” </P>
+            <p> 据悉，澎湃P1是一款小米自研的智能充电芯片，做到了续航和充电性能的最佳平衡，实现单电芯120W有线秒充，相比双串电芯效率更高。
+            </p>
+            <P>据官方介绍，澎湃P1作为业界首个谐振充电芯片，拥有自适应开关频率的4:1超高效率架构，谐振拓扑效率高达97.5%，非谐振拓扑效率为96.8%，热损耗直线下降30%。 。</P>
+            <P> 即将发布的小米12 Pro 是第一款搭载澎湃P1的智能手机，它支持有线120W澎湃秒充、50W无线秒充和10W无线反向充电。</P>
+            <P> 小米表示，在快充的道路上，小米已经遥遥领先其他厂商，用自研快充芯片将领先一年的快充技术率先落地在产品上。在12月28日的发布会上，还有更多好消息和大家分享。
+
+                2017年2月28日小米在北京举办了“我心澎湃”发布会，正式发布了自主独立芯澎湃S1。八核64位处理器，主频2.2GHz，四核Mali T860图形处理器，32位高性能语音DSP，支持VoLTE。
+                
+                2021年3月30日，小米春季新品发布会第2场上，小米又推出新款自研手机芯片澎湃C1。<br>
+            </P>
+
+        </DIV>
+    </marquee>
+    <div class="a">
+        <span style="--l:1">这</span>
+        <span style="--l:2">里</span>
+        <span style="--l:3">是</span>
+        <span style="--l:4">一</span>
+        <span style="--l:5">个</span>
+        <span style="--l:6">灯</span>
+        <span style="--l:7">泡</span>
+        <span style="--l:8">字</span>
+    </div>
+</body>
+
+</html>

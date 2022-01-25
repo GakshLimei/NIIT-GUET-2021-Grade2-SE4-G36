@@ -1,0 +1,66 @@
+	/* <STYLE type="text/css"> */
+        #submit {
+            margin-left: 100px;
+        }
+
+        th {
+            font-size: 20px;
+            background-color: green;
+        }
+
+        td {
+            text-align: left;
+            font-size: 20px;
+        }
+
+        table {
+            border: 1px solid green;
+        }
+
+        form {
+            float: left;
+            margin-right: 20px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        h2 {
+            background-color: green;
+            border: 1px solid green;
+            margin-left: 500px;
+        }
+
+        .auto-style {
+            /*
+        Chr ome
+        */
+            overflow-x: -webkit-marquee;
+            -webkit-marquee-direction: up;
+            -webkit-marquee-style: scroll;
+            -webkit-marquee-speed: normal;
+            -webkit-marquee-increment: small;
+            -webkit-marquee-repetition: infinite;
+        }
+		
+        .a{
+            position: relative;
+            top: 200px;
+            font: 900 100px '';
+            color: #333;
+            cursor: pointer;
+        }
+        .a span{
+            transition: .5s;
+            transition-delay: calc(var(--l)*.1s);
+        }
+        .a:hover span{
+            color: #fff;
+            text-shadow: 0 0 10px #333,
+            0 0 20px #fff,
+            0 0 30px #fff,
+            0 0 50px #fff,
+            0 0 80px #fff;
+        }
+    /* </STYLE>  */

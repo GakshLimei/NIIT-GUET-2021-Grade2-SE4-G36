@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div class="dingwei hidden-md hidden-lg"><a href="#dingbu"><i class="glyphicon glyphicon-plane"></i></a></div>
+  <!-- 杂志切换 -->
+  <div class=" magazine" id="magazine">
+    <ul class="list-group">
+      <li class="list-group-item magazine-pic" id="magazine-pic"></li>
+      <li class="list-group-item magazine-content" id="magazine-content">
+        <h3 class="h2 text-center" id="maga-h3">人工智能 </h3>
+        <h5 id="maga-span" class="text-center small">Artificial Intelligence</h5>
+        <p class=" text-center " id="maga-p">
+          它是研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新的技术科学。人工智能不是人的智能，但能像人那样思考、也可能超过人的智能。
+        </p>
+        <label for="button1" class="btn btn-primary button" onclick="btn1()">one</label>
+        <input type="radio" name="qiehuan" id="button1" checked>
+        <label for="button2" class="btn btn-primary button" onclick="btn2()">tow</label>
+        <input type="radio" name="qiehuan" id="button2">
+        <label for="button3" class="btn btn-primary button" onclick="btn3()">three</label>
+        <input type="radio" name="qiehuan" id="button3">
+      </li>
+    </ul>
+  </div>
+  <!-- 杂志切换 -->
+  <div class="container-fluid">
+
+    <div class="row">
+      <!-- 侧边导航栏 -->
+      <div class="col-xs-1 col-sm-1 col-md-2 shell1 hidden-sm hidden-xs" id="cebian">
+        <ul class="list-group">
+
+          <li class="list-group-item text-center"><a href="#magazine">前沿技术</a></li>
+          <li class="list-group-item text-center"><a href="#greenremaid">绿色贴士</a></li>
+          <li class="list-group-item text-center"><a href="#sceince">科学名人</a></li>
+          <li class="list-group-item text-center"><a href="#breaker">真假谣言</a></li>
+          <li class="list-group-item text-center"><a href="#nature">生灵之美</a></li>
+        </ul>
+      </div>
+      <!-- 侧边导航栏 -->
+      <!-- 顶部导航栏 -->
+      <div class="col-xs-12 col-sm-12 shell2 hidden-md hidden-lg" id="dingbu">
+        <ul class="list-group">
+          <li class="list-group-item text-center"><a href="#magazine">前沿技术</a></li>
+          <li class="list-group-item text-center"><a href="#greenremaid">绿色贴士</a></li>
+          <li class="list-group-item text-center"><a href="#sceince">科学名人</a></li>
+          <li class="list-group-item text-center"><a href="#breaker">真假谣言</a></li>
+          <li class="list-group-item text-center"><a href="#nature">生灵之美</a></li>
+        </ul>
+      </div>
+      <!-- 顶部导航栏 -->
+      <!-- 正文 -->
+      <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8" style="margin-top: 50px;">
+
+        <!-- 绿色贴士 -->
+        <div id="greenremaid">绿色贴士<span class="hidden-sm hidden-xs">Green Tips</span></div>
+        <div class="row rock" style="margin-bottom: 65px;">
+          <div class="col-12 h5 text-center " style="margin-bottom: 50px; font-size: 18px;"><i
+              class="glyphicon glyphicon-menu-left"></i><i
+              class="glyphicon glyphicon-menu-left"></i>饮水思源，科技便利生活时绿色环保仍需坚持，可持续发展才是大道理！<i
+              class="glyphicon glyphicon-menu-right"></i><i class="glyphicon glyphicon-menu-right"></i></div>
+          <div class="col-xs-6 col-sm-5 col-md-4 rem-lunbo">
+            <div class="thumbnail">
+              <img src="./images/rem1.jpg" alt="...">
+              <div class="caption">
+                <h3 class="text-center">节约用电</h3>
+                <p>随手关灯、少用电器、少用空调为减缓地球温暖化出一把力。</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-5 col-md-4 rem-lunbo">
+            <div class="thumbnail">
+              <img src="./images/rem2.jpg" alt="...">
+              <div class="caption">
+                <h3 class="text-center">文明用水</h3>
+                <p>随时关上水龙头，望见漏水的龙头必须要拧紧它,尽量使用二次水。</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-5 col-md-4 rem-lunbo">
+            <div class="thumbnail">
+              <img src="./images/rem3.jpg" alt="...">
+              <div class="caption">
+                <h3 class="text-center">绿色出行</h3>
+                <p>出行尽量选取公交车、地铁、自行车，少开私开车，减少尾气排放。</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-5 col-md-4 rem-lunbo">
+            <div class="thumbnail">
+              <img src="./images/rem4.jpg" alt="...">
+              <div class="caption">
+                <h3 class="text-center">拒绝浪费</h3>
+                <p>少用快餐盒、纸杯、纸盘和一次快筷子等，充分利用白纸，尽量使用再生纸。</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-5 col-md-4 rem-lunbo">
+            <div class="thumbnail">
+              <img src="./images/rem5.jpg" alt="...">
+              <div class="caption">
+                <h3 class="text-center">拒食野生动物</h3>
+                <p>拒用野生动物制品，不去那些食用野生动物的饭店就餐。</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-5 col-md-4 rem-lunbo">
+            <div class="thumbnail">
+              <img src="./images/rem6.jpg" alt="...">
+              <div class="caption">
+                <h3 class="text-center">参加领养树的活动</h3>
+                <p>定期给它浇水、培土，照料它成长，让它成为你家庭的一员。</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-5 col-md-4 rem-lunbo">
+            <div class="thumbnail">
+              <img src="./images/rem7.jpg" alt="...">
+              <div class="caption">
+                <h3 class="text-center">使用节能电器</h3>
+                <p>能省一些是一些，积少成多，为我们创造一美好的明天。</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 绿色贴士 -->
+
+        <!-- 科学名人 -->
+        <div id="sceince">科学大家<span class="hidden-sm hidden-xs">Great Scientist</span></div>
+        <div class="row">
+          <div class="col-12 text-center" style="margin-top: 50px; font-size: 18px;"><i
+              class="glyphicon glyphicon-menu-left"></i><i class="glyphicon glyphicon-menu-left"></i>
+            功成名就不是所有人的愿望，但在书山学海却有着自己的一条通天道或是破冰船。<i class="glyphicon glyphicon-menu-right"></i><i
+              class="glyphicon glyphicon-menu-right"></i></div>
+        </div>
+        <!-- 名人区 -->
+        <div class="row famous">
+          <ul class="list-group ">
+            <li class="list-group-item "><img src="./images/2g.jpg" alt=""><a href="https://baike.baidu.com/item/%E8%89%BE%E8%90%A8%E5%85%8B%C2%B7%E7%89%9B%E9%A1%BF/1119240" target="_block"><span class="fam-mask" alt="">艾萨克·牛顿</span></a>
+            </li>
+            <li class="list-group-item "><img src="./images/3g.jpg" alt=""><a href="https://baike.baidu.com/item/%E8%A2%81%E9%9A%86%E5%B9%B3/43836" target="_block"><span class="fam-mask" alt="">袁隆平</span></a></li>
+            <li class="list-group-item "><img src="./images/4g.jpg" alt=""><a href="https://baike.baidu.com/item/%E6%BD%98%E5%BB%BA%E4%BC%9F/12245" target="_block"><span class="fam-mask" alt="">潘建伟</span></a></li>
+            <li class="list-group-item "><img src="./images/1g.jpg" alt=""><a href="https://baike.baidu.com/item/%E8%89%BE%E4%BC%A6%C2%B7%E9%BA%A6%E5%B8%AD%E6%A3%AE%C2%B7%E5%9B%BE%E7%81%B5/3940576?fromtitle=%E5%9B%BE%E7%81%B5&fromid=121208" target="_block"><span class="fam-mask"
+              alt="">艾伦·麦席森·图灵</span></a>
+            </li>
+          </ul>
+        </div>
+        <!-- 名人区 -->
+
+        <!-- 报名申请 -->
+        <div class="row application">
+          <ul class="list-group " style="background-image: url(./images/shwnqing.jpg);">
+            <li class="list-group-item frist"><span class="h1 text-center">户外游学报名</span></li>
+            <li class="list-group-item last"><span class=" text-center bll">创新源于灵感，而灵感来自于生活，让我们走进自然，感受大自然的奇思妙想
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg shenqing" data-toggle="modal"
+                  data-target="#myModal">
+                  点击报名
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">户外游学安全须知及申请表提交</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div>
+
+                          <!-- Nav tabs -->
+                          <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                data-toggle="tab">安全须知1</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
+                                data-toggle="tab">安全须知2</a></li>
+                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
+                                data-toggle="tab">安全须知3</a></li>
+                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab"
+                                data-toggle="tab">预报名登记</a></li>
+                          </ul>
+
+                          <!-- Tab panes -->
+                          <div class="tab-content shenqing-con">
+                            <div role="tabpanel" class="tab-pane active " id="home">
+                              为了成员增强安全意识，普及旅游安全基本常识，使成员参加活动的计划圆满、愉快、顺利地完成，请认真阅读本须知并严格履行，防止意外事件。
+                              <h1>一、乘车（机、船）安全事项</h1>
+                              <span>
+                                1、游客在机、车、船停稳后方可上下机、车、船。并按机场、车站、港口安全管理规定或指示标志通行及排队上下机、车、船；要讲究文明礼貌，先照顾老人、儿童、妇女；切勿拥挤，以免发生意外。请勿携带违禁物品。</span>
+                              <span>2、在机、车、船临时停靠期间，服从服务人员安排，请勿远离。</span>
+                              <span>3、游客在乘车途中，请不要与司机交谈和催促司机开快车，违章超速和超车行驶；不要将头、手、脚或行李物品伸出窗外，以防意外发生。</span>
+                              <span> 4、游客下车浏览、就餐、购物时，请注意关好旅游车窗，拿完自己随身携带的贵重物品；否则出现遗失被盗旅行社概不负责。</span>
+                              <span>5、游客乘坐飞机时，应注意遵守民航乘机安全管理规定，特别是不要在飞机上使用手机等无线电通讯工具或电子游戏等。</span>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile">
+                              为了成员增强安全意识，普及旅游安全基本常识，使成员参加活动的计划圆满、愉快、顺利地完成，请认真阅读本须知并严格履行，防止意外事件。
+                              <h1>二、住宿安全事项</h1>
+                              <span>1、游客入住酒店后，应了解酒店安全须知，熟悉酒店的太平门、安全出路、安全楼梯的位置安全转移的路线。</span>
+                              <span>2、注意检查酒店为你所配备的用品（卫生间防滑垫等）是否齐全，有无破损，如有不全或破损，请立即向酒店服务员或导游报告。如因当地条件所限，未能配备，请游客小心谨慎，防止发生意外。</span>
+                              <span>3、贵重物品应存放于酒店服务总台保险柜或自行妥善保管，外出时不要放在房间内，若出现丢失，后果自负。</span>
+                              <span>4、不要将自己住宿的酒店、房号随便告诉陌生人；不要让陌生人或自称酒店的维修人员随便进入房间；出入房间要锁好房门，睡觉前注意房门窗是否关好，保险锁是否锁上；物品最好放于身边，不要放在靠窗的地方。</span>
+                              <span>5、游客入住酒店后需要外出时，应告知随团导游；在酒店总台领一张酒店房卡，卡片上有酒店地址、电话或抄写酒店地址或电话；如果您迷路时，可以按地址询问或搭乘出租车，安全顺利返回住所。</span>
+                              <span>6、遇紧急情况千万不要慌张。发生火警时不要搭乘车电梯或随意跳楼；镇定地判断火情，主动地实行自救。若身上着火，可就地打滚，或用重衣物压火苗；必须穿过有浓烟的走廊、通道时，用浸温的衣物披裹身体，捂着口鼻，贴近地、顺墙爬走；大火封门无法逃出时，可采用浸温的衣物披裹身体被褥堵门缝或泼水降温的办法等待救援或摇动色彩鲜艳的衣物呼唤救援人员。</span>
+                              <h1>三、饮食卫生安全事项</h1>
+                              <span>1、在旅游地购买食物需注意商品质量，发现食物不卫生或有异味变质的情况，切勿食用。</span>
+                              <span>2、不要接受和食用陌生人赠送的香烟、食物和饮品，防止他人暗算和失窃。</span>
+                              <span>3、旅游期间要合理饮食，不要暴饮、暴食或贪食。</span>
+                              <span>4、为防止在旅途中水土不服，游客应自备一些常用药品以备不时之需。切勿随意服用他人所提供之药品。</span>
+                              <span>5、旅行社不提倡、不安排饮酒，并对游客因饮酒发生的意外不承担责任。喜欢喝酒的游客在旅途中应严格控制自己的酒量，饮酒时最好不超过本人平时的三分之一；若出现酗酒闹事、扰乱社会秩序、侵害他人权益以及造成自身损害的一切责任由肇事者承担。</span>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="messages">
+                              为了成员增强安全意识，普及旅游安全基本常识，使成员参加活动的计划圆满、愉快、顺利地完成，请认真阅读本须知并严格履行，防止意外事件。
+                              <h1> 四、游览观景安全事项</h1>
+                              <span>1、听取当地导游有关安全的提示和忠告，主要应预防意外事故和突发性疾病的发生。</span>
+                              <span>2、经过危险地段（如陡峭、狭窄的同路、潮湿泛滑的道路等）不可拥挤；前往险峻处观光时应充分考虑自身的条件是否可行，不要强求和存侥幸心理。</span>
+                              <span>3、游客登山或参与活动中根据应自身身体状况进行，注意适当休息，避免过度激烈运动以及自身身体无法适应的活动，同时做好防护工作。</span>
+                              <span>4、在水上（包括江河、湖海、水库）浏览或活动时，注意乘船安全要穿戴救生衣；不单独前往深水水域或危险河道。</span>
+                              <span>5、乘坐缆车或其他土载人观光运载工具时，应服从景区工作人员安排；遇超载、超员或其他异常时，千万不要乘坐，以防发生危险。</span>
+                              <span>6、浏览期间游客应三两成群，不要独行。如果迷失方向，原则上应原地等候导游的到来或打电话求救、求助，千万不要着急。自由活动期间游客不要走的太远。带未成年人的游客，请认真履行监护责任，管好自己的孩子，不能让未成年人单独行动，并注意安全。</span>
+                              <span>7、在旅游行程中的自由活动时间，游客应当选择自己能够控制风险的活动项目，并在自己能够控制风险的范围内活动。除特殊团队外，旅行社不安排赛车、赛马、攀岩、滑翔、探险性漂流、滑雪、下海、潜水、滑板、跳伞、热气球、蹦极、冲浪、跳伞等高风险活动，也敬请游客在旅游中的自由活动期间尽量不要去参加这些活动，如若游客坚持参与，请自行承担风险。</span>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="settings">
+                              <form class="form-horizontal">
+                                <div class="form-group" style="margin-top: 20px;padding-top: 30px;">
+                                  <label for="inputEmail3" class="col-sm-2 control-label">姓名</label>
+                                  <div class="col-sm-8">
+                                    <input type="name" class="form-control" id="inputEmail3" placeholder="姓名">
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label for="inputEmail3" class="col-sm-2 control-label">电子邮箱</label>
+                                  <div class="col-sm-8">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="电子邮箱">
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label for="inputPassword3" class="col-sm-2 control-label">电话号码</label>
+                                  <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="inputPassword3" placeholder="电话号码">
+                                  </div>
+                                </div>
+                                <label><input type="checkbox" class="checkbox" id="fanshi">已阅读安全事项须知 </label>
+                                <div class="form-group">
+                                  <div class="col-sm-offset-1 col-sm-9">
+                                    <button type="submit" class="btn btn-default">提交</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary">保存</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span></li>
+          </ul>
+        </div>
+        <!-- 报名申请 -->
+
+        <!-- 科学名人 -->
+
+        <!-- 谣言粉碎机 -->
+        <div id="breaker">真假谣言<span class="hidden-sm hidden-xs">True and False</span></div>
+        <div class="row">
+          <div class="col-12 text-center" style="margin-top: 50px; font-size: 18px;"><i
+              class="glyphicon glyphicon-menu-left"></i><i
+              class="glyphicon glyphicon-menu-left"></i>不信谣，不传谣，是谣言？是真相？科学实践为你一一解答！<i
+              class="glyphicon glyphicon-menu-right"></i><i class="glyphicon glyphicon-menu-right"></i></div>
+        </div>
+        <div class="row break ">
+          <ul class="list-group">
+            <li class="list-group-item" style="overflow: hidden;"><img src="./images/yao1.jpg" alt=""
+                class="img-responsive"></li>
+            <li class="list-group-item">
+              <span>
+                <h3> <img src="./images/问号.jpg" alt="">吃草莓会得出血热是真的吗</h3>
+              </span>
+              <span style="background-image: url(./images/break1.jpg);">
+                <h1>真相</h1>
+                <h4>吃草莓和出血热没有直接关系,出血热一年四季均有发病，但有明显季节高峰。购买草莓时，应选择外表无异物的，吃前需用淡盐水浸泡并用清水冲洗后食用，降低患病风险。</h4>
+              </span>
+            </li>
+            <li class="list-group-item">
+              <span>
+                <h3> <img src="./images/问号.jpg" alt="">鼻子不通气，使劲擤就行了是真的吗</h3>
+              </span>
+              <span style="background-image: url(./images/break1.jpg);">
+                <h1>真相</h1>
+                <h4>其实无论是擤鼻涕还是抠鼻子，都容易带来健康风险。用力擤鼻涕导致鼻腔压力突然增高，使得感染性鼻涕进入鼻窦引起炎症，难受时可以考虑热敷鼻子，帮助鼻腔循环恢复通气。</h4>
+              </span>
+            </li>
+            <li class="list-group-item" style="overflow: hidden;"><img src="./images/yao2.jpg" alt=""></li>
+            <li class="list-group-item" style="overflow: hidden;"><img src="./images/yao3.jpg" alt=""></li>
+            <li class="list-group-item">
+              <span>
+                <h3> <img src="./images/问号.jpg" alt="">喝矿泉水也需要精挑细选是真的吗</h3>
+              </span>
+              <span style="background-image: url(./images/break1.jpg);">
+                <h1>真相</h1>
+                <h4>在日常生活中喝水能促进人体的新陈代谢，保障身体健康。我们不必太过于纠结饮用水的纯度和矿物质含量，只要是安全有保障即可，只要在正规渠道上购买产品，尽管放心饮用。</h4>
+              </span>
+            </li>
+            <li class="list-group-item">
+              <span>
+                <h3> <img src="./images/问号.jpg" alt="">兽药伊维菌素能治疗新冠是真的吗</h3>
+              </span>
+              <span style="background-image: url(./images/break1.jpg);">
+                <h1>真相</h1>
+                <h4>不能治愈新冠，大量服用很危险,大家希望治疗新冠肺炎的药物问世，这一愿望是美好的，不过事实证明，该治疗方法并不靠谱，在美国已经出现了“以身试药”导致中毒的事件。</h4>
+              </span>
+            </li>
+            <li class="list-group-item" style="overflow: hidden;"><img src="./images/yao4.jpg" alt=""></li>
+          </ul>
+        </div>
+        <!-- 谣言粉碎机 -->
+
+        <!-- 轮播图 -->
+        <div id="nature">生灵之美 <span class="hidden-sm hidden-xs">Beautiful Nature</span></div>
+        <div class="row">
+          <div class="col-12 text-center" style="margin-top: 50px; margin-bottom: 50px; font-size: 18px;"><i
+              class="glyphicon glyphicon-menu-left"></i><i
+              class="glyphicon glyphicon-menu-left"></i>青山绿水，我们的家。以科技之光辉，驱散污染病害，让自然容光焕发<i
+              class="glyphicon glyphicon-menu-right"></i><i class="glyphicon glyphicon-menu-right"></i></div>
+        </div>
+        <div class="row"></div>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="./images/lunbo1.jpg" alt="...">
+              <div class="carousel-caption">
+                溪去暗流水幽幽，风抚青林山重重。
+              </div>
+            </div>
+            <div class="item">
+              <img src="./images/lunbo2.jpg" alt="...">
+              <div class="carousel-caption">
+                破空晖光俯大江，绿丛暗生相辉映。
+              </div>
+            </div>
+            <div class="item">
+              <img src="./images/lunbo3.jpg" alt="...">
+              <div class="carousel-caption">
+                潋滟起，不知是鱼嬉戏还是风随意，昨夜云滇复秋意，洱海静寂千重云。
+              </div>
+            </div>
+
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!-- 轮播图 -->
+      </div>
+      <!-- 正文 -->
+    </div>
+  </div>
+  <!-- 页脚 -->
+  <!-- <div class="footer">
+    <div class="wap">
+      <div class="left ">
+        <img src="./images/erweima.png" alt="" class="img-rounded">
+        <p class="h5">扫二维码<br>了解更多</p>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="">关于我们</a>|</li>
+          <li><a href="">帮助中心</a>|</li>
+          <li><a href="">在线客服</a>|</li>
+          <li><a href="">问题反馈</a>|</li>
+          <li><a href="">合作伙伴</a></li>
+        </ul><br>
+        <p>&copy;201603020316仲恒</p>
+      </div>
+    </div>
+  </div> -->
+  <div class="footer">
+    <ul class="list-group">
+      <li class="list-group-item"><img src="./images/erweima.png" alt="" class="img-rounded"></li>
+      <li class="list-group-item">
+        <p class="h3">扫二维码<br>了解更多</p>
+      </li>
+      <li class="list-group-item text-center">
+        <a href="">关于我们</a>|
+        <a href="">帮助中心</a>|
+        <a href="">在线客服</a>|
+        <a href="">问题反馈</a>|
+        <a href="">合作伙伴</a>
+      <li class="list-group-item text-center">&copy;201603020316仲恒</li>
+
+    </ul>
+  </div>
+
+  <!-- 页脚 -->
+
+
+
+  <script>
+    function btn1() {
+      document.getElementById("maga-h3").innerHTML = "人工智能";
+      document.getElementById("maga-span").innerHTML = "Artificial Intelligence";
+      document.getElementById("maga-p").innerHTML = "它是研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新的技术科学。人工智能不是人的智能，但能像人那样思考、也可能超过人的智能。";
+      document.getElementById("magazine-content").style.backgroundImage = "url(./images/con1.jpg)";
+      document.getElementById("magazine-pic").style.backgroundImage = "url(./images/11f.jpg)";
+    }
+    function btn2() {
+      document.getElementById("maga-h3").innerHTML = "虚拟现实";
+      document.getElementById("maga-span").innerHTML = "Virtual Reality";
+      document.getElementById("maga-p").innerHTML = "是20世纪发展起来的一项全新的实用技术。虚拟现实技术囊括计算机、电子信息、仿真技术，其基本实现方式是计算机模拟虚拟环境从而给人以环境沉浸感。随着社会生产力和科学技术的不断发展，各行各业对VR技术的需求日益旺盛。VR技术也取得了巨大进步，并逐步成为一个新的科学技术领域。";
+      document.getElementById("magazine-content").style.backgroundImage = "url(./images/con2.jpg)";
+      document.getElementById("magazine-pic").style.backgroundImage = "url(./images/22f.jpg)";
+    }
+    function btn3() {
+      document.getElementById("maga-h3").innerHTML = "云计算";
+      document.getElementById("maga-span").innerHTML = "cloud computing";
+      document.getElementById("maga-p").innerHTML = "是分布式计算的一种，指的是通过网络“云”将巨大的数据计算处理程序分解成无数个小程序，然后，通过多部服务器组成的系统进行处理和分析这些小程序得到结果并返回给用户。通过这项技术，可以在很短的时间内（几秒钟）完成对数以万计的数据的处理，从而达到强大的网络服务。";
+      document.getElementById("magazine-content").style.backgroundImage = "url(./images/con3.jpg)";
+      document.getElementById("magazine-pic").style.backgroundImage = "url(./images/33f.jpg)";
+    }
+
+  </script>
+
+  <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"
+    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+    crossorigin="anonymous"></script>
+  <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
